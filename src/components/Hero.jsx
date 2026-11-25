@@ -39,8 +39,9 @@ function RotatingRole({ ready }) {
 
 export default function Hero({ ready }) {
   const { scrollY } = useScroll()
-  const yText = useTransform(scrollY, [0, 800], [0, 220])
+  const yText = useTransform(scrollY, [0, 800], [0, 120])
   const fade = useTransform(scrollY, [0, 600], [1, 0])
+  const cueFade = useTransform(scrollY, [0, 120], [1, 0])
   const orbY = useTransform(scrollY, [0, 800], [0, -160])
 
   const fadeUp = (d) => ({
@@ -95,9 +96,11 @@ export default function Hero({ ready }) {
         </motion.div>
       </motion.div>
 
-      <motion.a href="#showcase" className="scroll-cue mono" {...fadeUp(1.8)}>
-        <span className="scroll-line" /> SCROLL TO EXPLORE
-      </motion.a>
+      <motion.div className="scroll-cue-wrap" style={{ opacity: cueFade }}>
+        <motion.a href="#showcase" className="scroll-cue mono" {...fadeUp(1.8)}>
+          <span className="scroll-line" /> SCROLL TO EXPLORE
+        </motion.a>
+      </motion.div>
     </section>
   )
 }
