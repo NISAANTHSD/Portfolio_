@@ -18,6 +18,7 @@ export default function Contact() {
     ['LinkedIn', profile.links.linkedin],
     ['GitHub', profile.links.github],
     ['LeetCode', profile.links.leetcode],
+    ['Instagram', profile.links.instagram],
   ]
 
   return (

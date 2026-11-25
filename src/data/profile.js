@@ -18,6 +18,7 @@ export const profile = {
     github: 'https://github.com/NISAANTHSD',
     linkedin: 'https://www.linkedin.com/in/nisaanth-s-d-498313381/',
     leetcode: 'https://leetcode.com/u/Me4MkEFXN6',
+    instagram: 'https://www.instagram.com/_.nisaanth._/',
   },
   about: [
     'I am a Computer Science and Engineering student at Bannari Amman Institute of Technology, passionate about full-stack web development and mobile application development.',
